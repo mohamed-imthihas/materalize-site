@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grand Hotel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+</head>
+
+<body class="overflow-hide">
+    <!--pre loader-->
+    <div class="preloader-bg">
+        <div class='preload-juggle'>
+            <div class='ball'></div>
+            <div class='ball'></div>
+            <div class='ball'></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+    <!--header-->
+    <div class="nav-bg scrollspy" id="home">
+        <div class="video-container">
+            <video loop muted autoplay width="100%">
+                <source src="https://www.videvo.net/app/stream.php?id=5786" type="video/mp4">
+                    <!-- <source src="videos/Sea_waves_video.ogg" type="video/ogg">
+			<source src="videos/Sea_waves_video.webm" type="video/webm"> -->
+            </video>
+        </div>
+        <header class="navbar-fixed">
+            <nav class="navigation transparent">
+                <a href="#" class="brand-logo center"><img class="logo" src="images/site-logo.png">
+                </a>
+                <div class="hb-menu">
+                    <button class="hb-menu-icon" data-activates="slide-out">
+                        <span class="hb-menu-layer"></span>
+                    </button>
+                </div>
+                <ul class="right navlist">
+                    <li><a class="white-text modal-trigger" href="#login-modal">Login</a>
+                    </li>
+                    <li><a href="javascript:void(0);" class="white-text">SignUp</a>
+                    </li>
+                </ul>
+                <!-- side nav drawer -->
+                <ul id="slide-out" class="side-nav">
+                    <li><a class="waves-effect waves-light" href="#home">Home</a>
+                    </li>
+                    <li><a class="waves-effect waves-light" href="#about">About</a>
+                    </li>
+                    <li><a class="waves-effect waves-light" href="#amenities">Amenities</a>
+                    </li>
+                    <li><a class="waves-effect waves-light" href="#rooms">Rooms</a>
+                    </li>
+                    <li><a class="waves-effect waves-light" href="#rates">Rates</a>
+                    </li>
+                    <li><a class="waves-effect waves-light" href="#gallery">Gallery</a>
+                    </li>
+                    <li><a class="waves-effect waves-light" href="#news">News</a>
+                    </li>
+                    <li><a class="waves-effect waves-light" href="#promo">Promo Video</a>
+                    </li>
+                    <li><a class="waves-effect waves-light" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--carousel-->
+        <div class="slider">
+            <ul class="slides noselect white-text" data-indicators="true">
+                <li class="carousel-item" href="#one!">
+                    <div class="caption left-align container row">
+                        <div class="carousel-content left-align col l6">
+                            <h2 class="slide-title">The Best place</h2>
+                            <span class="small-slide-title">for relax!</span>
+                            <p class="slide-info">Our rooms are bright, spacious and very quiet. For your convenience you can book single and double accomodation or rooms for more than two people.</p>
+                            <a class="format center btn waves-effect waves-light green white-text" href="javascript:void(0)">Book Now</a>
+                        </div>
+                        <div class="carousel-image hide-on-med-and-down col l6">
+                            <img src="images/dishes.png">
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel-item " href="#two!">
+                    <div class="caption center-align container row">
+                        <div class="carousel-content left-align col l6">
+                            <h2 class="slide-title">Perfect Place</h2>
+                            <span class="small-slide-title">for dining!</span>
+                            <p class="slide-info">Our rooms are bright, spacious and very quiet. For your convenience you can book single and double accomodation or rooms for more than two people.</p>
+                            <a class="format center btn waves-effect waves-light green white-text" href="javascript:void(0)">Book Now</a>
+                        </div>
+                        <div class="carousel-image hide-on-med-and-down col l6">
+                            <img src="images/dishes.png">
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel-item" href="#three!">
+                    <div class="caption right-align container row">
+                        <div class="carousel-content left-align col l6">
+                            <h2 class="slide-title">Deluxe Room</h2>
+                            <span class="small-slide-title">one king bed!</span>
+                            <p class="slide-info">Our rooms are bright, spacious and very quiet. For your convenience you can book single and double accomodation or rooms for more than two people.</p>
+                            <a class="format center btn waves-effect waves-light green white-text" href="javascript:void(0)">Book Now</a>
+                        </div>
+                        <div class="carousel-image hide-on-med-and-down col l6">
+                            <img src="images/dishes.png">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a href="#about" class="down-button animated bounce infinite"><i class="white-text material-icons medium">keyboard_arrow_down</i></a>
+    </div>
+    <!-- info block -->
+    <section id="about" class="container info scrollspy hide-card">
+        <div class="row box">
+            <article class="col l4 m10 s12 center">
+                <img src="images/icon1.png">
+                <div class="divider format"></div>
+                <div class="detail ">
+                    <p class="grey-text text-darken-2 heading">MAP &amp; DIRECTIONS</p>
+                    <p class="grey-text text-darken-2">Located in the middle of the historical centre of Poland only 2 minutes away. Very easy to find.</p>
+                </div>
+            </article>
+            <article class="col l4 m10 s12 center">
+                <img src="images/icon2.png">
+                <div class="divider format"></div>
+                <div class="detail">
+                    <p class="grey-text text-darken-2 heading">SERVICES &amp; HOUSING</p>
+                    <p class="grey-text text-darken-2">We have many services available to you: towels, internet, no curfew, 24 hour reception, etc.</p>
+                </div>
+            </article>
+            <article class="col l4 m10 s12 center">
+                <img src="images/icon3.png">
+                <div class="divider format"></div>
+                <div class="detail ">
+                    <p class="grey-text text-darken-2 heading">GREAT HIGHLIGHTS</p>
+                    <p class="grey-text text-darken-2">We really captured for you the most important monuments in beautiful pictures.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!--Amentities-->
+    <section id="amenities" class="row scrollspy">
+        <div id="amenities">
+            <img src="images/amenities_bg.png" class="looping">
+        </div>
+        <div class="amenities_text noselect col s12" id="amenities_text">
+            <h3 class="center title grey-text text-lighten-2">AMENITIES</h3>
+            <div class="container">
+                <div class="row grey-text text-lighten-2 center carousel" id="amenities_carousel">
+
+                    <div class="carousel-item col s6 m4 l3 amenities_list">
+                        <div>
+                            <i class="material-icons medium">settings_input_svideo</i>
+                            <div> <span>Elevator</span> </div>
+                        </div>
+                        <div>
+                            <i class="material-icons medium">supervisor_account</i>
+                            <div> <span>Family Rooms</span> </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col s6 m4 l3 amenities_list">
+                        <div>
+                            <i class="material-icons medium">face</i>
+                            <div> <span>Extra &amp; kids Bed</span> </div>
+                        </div>
+                        <div>
+                            <i class="material-icons medium">smoking_rooms</i>
+                            <div> <span>Smoking Areas</span> </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col s6 m4 l3 amenities_list">
+                        <div>
+                            <i class="material-icons medium">credit_card</i>
+                            <div> <span>Credit Cards</span> </div>
+                        </div>
+                        <div>
+                            <i class="material-icons medium">wifi</i>
+                            <div> <span>Wifi</span> </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col s6 m4 l3  amenities_list">
+                        <div>
+                            <i class="material-icons medium">restaurant</i>
+                            <div> <span>Breakfast Buffet</span> </div>
+                        </div>
+                        <div>
+                            <i class="material-icons medium">tv</i>
+                            <div> <span>TV Programs</span> </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col s6 m4 l3 amenities_list">
+                        <div>
+                            <i class="material-icons medium">hot_tub</i>
+                            <div> <span>Heating</span> </div>
+                        </div>
+                        <div>
+                            <i class="material-icons medium">room_service</i>
+                            <div> <span>Room Service</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cntrl-btns container">
+                    <button class="btn transparent" id="left-btn"><i class="material-icons">keyboard_arrow_left</i>
+                    </button>
+                    <button class="btn transparent" id="right-btn"><i class="material-icons">keyboard_arrow_right</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--rooms-->
+    <div id="rooms" class="container scrollspy">
+        <div class="row">
+            <h3 class="center title grey-text text-darken-2">OUR ROOMS</h3>
+            <p class="center grey-text text-darken-1">We offer a great list of room types so you can have a great time at our hostel.</p>
+        </div>
+        <div class="card sticky-action row hide-card">
+            <div class="card-image col s12 l7">
+                <img src="images/product-7.jpg">
+            </div>
+            <div class="card-stacked col s12 l5">
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-3">Single Room<i class="material-icons right activator hide-on-large-only">more_vert</i></span>
+                    <p class="grey-text text-darken-1">A comfortable and quiet room facing the inner courtyard.</p>
+                    <p>from <span class="price">25.00$/night</span>
+                    </p>
+                    <ul class="facility-list grey-text text-darken-1 hide-on-med-and-down">
+                        <li>Shower / WC</li>
+                        <li>TV</li>
+                        <li>Breakfast buffet incl.</li>
+                        <li>Parking sticker incl.</li>
+                    </ul>
+                </div>
+                <div class="card-action center-on-small-only">
+                    <a href="javascript:void(0)" class="btn red darken-4 waves-effect waves-light">Book Now</a>
+                </div>
+            </div>
+            <div class="card-reveal">
+                <h4 class="card-title">Single Room<i class="material-icons right">close</i></h4>
+                <p class="grey-text text-darken-1">A comfortable and quiet room facing the inner courtyard.</p>
+                <p>from <span class="price">25.00$/night</span>
+                </p>
+                <ul class="facility-list grey-text text-darken-1">
+                    <li>Shower / WC</li>
+                    <li>TV</li>
+                    <li>Breakfast buffet incl.</li>
+                    <li>Parking sticker incl.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card sticky-action row hide-card">
+            <div class="card-image col s12 l7">
+                <img src="images/product-7.jpg">
+            </div>
+            <div class="card-stacked col s12 l5">
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-3">Single Room<i class="material-icons right activator hide-on-large-only">more_vert</i></span>
+                    <p class="grey-text text-darken-1">A comfortable and quiet room facing the inner courtyard.</p>
+                    <p>from <span class="price">25.00$/night</span>
+                    </p>
+                    <ul class="facility-list grey-text text-darken-1 hide-on-med-and-down">
+                        <li>Shower / WC</li>
+                        <li>TV</li>
+                        <li>Breakfast buffet incl.</li>
+                        <li>Parking sticker incl.</li>
+                    </ul>
+                </div>
+                <div class="card-action center-on-small-only">
+                    <a href="javascript:void(0)" class="btn red darken-4 waves-effect waves-light">Book Now</a>
+                </div>
+            </div>
+            <div class="card-reveal col s12 l6">
+                <h4 class="card-title">Single Room<i class="material-icons right">close</i></h4>
+                <p class="grey-text text-darken-1">A comfortable and quiet room facing the inner courtyard.</p>
+                <p>from <span class="price">25.00$/night</span>
+                </p>
+                <ul class="facility-list grey-text text-darken-1">
+                    <li>Shower / WC</li>
+                    <li>TV</li>
+                    <li>Breakfast buffet incl.</li>
+                    <li>Parking sticker incl.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card sticky-action row hide-card">
+            <div class="card-image col s12 l7">
+                <img src="images/product-7.jpg">
+            </div>
+            <div class="card-stacked col s12 l5">
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-3">Single Room<i class="material-icons right activator hide-on-large-only">more_vert</i></span>
+                    <p class="grey-text text-darken-1">A comfortable and quiet room facing the inner courtyard.</p>
+                    <p>from <span class="price">25.00$/night</span>
+                    </p>
+                    <ul class="facility-list grey-text text-darken-1 hide-on-med-and-down">
+                        <li>Shower / WC</li>
+                        <li>TV</li>
+                        <li>Breakfast buffet incl.</li>
+                        <li>Parking sticker incl.</li>
+                    </ul>
+                </div>
+                <div class="card-action center-on-small-only">
+                    <a href="javascript:void(0)" class="btn red darken-4 waves-effect waves-light">Book Now</a>
+                </div>
+            </div>
+            <div class="card-reveal col s12 l6">
+                <h4 class="card-title">Single Room<i class="material-icons right">close</i></h4>
+                <p class="grey-text text-darken-1">A comfortable and quiet room facing the inner courtyard.</p>
+                <p>from <span class="price">25.00$/night</span>
+                </p>
+                <ul class="facility-list grey-text text-darken-1">
+                    <li>Shower / WC</li>
+                    <li>TV</li>
+                    <li>Breakfast buffet incl.</li>
+                    <li>Parking sticker incl.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- our rates -->
+    <section id="rates" class="row scrollspy">
+        <div class="container">
+            <h3 class="center title grey-text text-lighten-4">OUR RATES</h3>
+        </div>
+        <div class="container">
+            <div class="card-panel hoverable col s12 l3 center">
+                <h5>Single Room</h5>
+                <p>Rs.25/night</p>
+                <div>
+                    <p>Peak Season (3/1 - 10/31)</p>
+                    <p>Rs.27</p>
+                    <div class="divider"></div>
+                    <p>Off Season (11/1 - 2/28)</p>
+                    <p>Rs.25</p>
+                </div>
+                <button class="waves-effect waves-light btn green accent-4"><i class="material-icons right white-text">trending_flat</i>BOOK NOW</button>
+            </div>
+            <div class="card-panel hoverable col s12 l3 center-card center">
+                <h5>Double Room</h5>
+                <p>Rs.35/night</p>
+                <div>
+                    <p>Peak Season (3/1 - 10/31)</p>
+                    <p>Rs.27</p>
+                    <div class="divider"></div>
+                    <p>Off Season (11/1 - 2/28)</p>
+                    <p>Rs.25</p>
+                </div>
+                <button class="waves-effect waves-light btn green accent-4"><i class="material-icons right">trending_flat</i>BOOK NOW</button>
+            </div>
+            <div class="card-panel hoverable col s12 l3 center">
+                <h5>3-Bed Room</h5>
+                <p>Rs.75/night</p>
+                <div>
+                    <p>Peak Season (3/1 - 10/31)</p>
+                    <p>Rs.27</p>
+                    <div class="divider"></div>
+                    <p>Off Season (11/1 - 2/28)</p>
+                    <p>Rs.25</p>
+                </div>
+                <button class="waves-effect waves-light btn green accent-4"><i class="material-icons right">trending_flat</i>BOOK NOW</button>
+            </div>
+        </div>
+    </section>
+    <!-- gallery -->
+    <div id="gallery" class="scrollspy">
+        <div class="gallery-bg"></div>
+        <div class="gallery row">
+            <h3 class="center title black-text text-darken-3">OUR GALLERY</h3>
+            <div class="gallery-slide slider container">
+                <ul class="big-image slides z-depth-5 ">
+                    <li><img src="images/portfolio-thumbnail-1.jpg"></li>
+                    <li><img src="images/portfolio-thumbnail-2.jpg"></li>
+                    <li><img src="images/portfolio-thumbnail-3.jpg"></li>
+                    <li><img src="images/portfolio-thumbnail-4.jpg"></li>
+                    <li><img src="images/portfolio-thumbnail-5.jpg"></li>
+                    <li><img src="images/portfolio-thumbnail-6.jpg"></li>
+                    <li><img src="images/portfolio-thumbnail-7.jpeg"></li>
+                    <li><img src="images/portfolio-thumbnail-8.jpeg"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--news-->
+    <div id="news" class="scrollspy">
+        <div class="news row">
+            <h3 class="center title grey-text text-darken-2">OUR NEWS</h3>
+            <div class="card col s12 m6 l3 hide-card">
+                <div class="card-image">
+                    <img src="images/article-thumbnail-1.jpg">
+                </div>
+                <div class="card-content center">
+                    <p class="card-title white-text">Our Impecable Cleaning Service </p>
+                    <span class="green-text text-darken-5">Thursday, July 05, 2015</span>
+                </div>
+                <div class="card-action center-on-small-only">
+                    <a href="javascript:void(0)" class="btn waves-effect waves-light green accent-4">Read More</a>
+                </div>
+            </div>
+            <div class="card col s12 m6 l3 hide-card">
+                <div class="card-image">
+                    <img src="images/article-thumbnail-2.jpg">
+                </div>
+                <div class="card-content center">
+                    <p class="card-title white-text">Grand new Opening of Our Hostel</p>
+                    <span class="green-text text-darken-5">Thursday, July 04, 2015</span>
+                </div>
+                <div class="card-action center-on-small-only">
+                    <a href="javascript:void(0)" class="btn waves-effect waves-light green accent-4">Read More</a>
+                </div>
+            </div>
+            <div class="card col s12 m6 l3 hide-card">
+                <div class="card-image">
+                    <img src="images/article-thumbnail-3.jpg">
+                </div>
+                <div class="card-content center">
+                    <p class="card-title white-text">Our Beautiful Single Ensuites</p>
+                    <span class="green-text text-darken-5">Thursday, July 03, 2015</span>
+                </div>
+                <div class="card-action center-on-small-only">
+                    <a href="javascript:void(0)" class="btn waves-effect waves-light green accent-4">Read More</a>
+                </div>
+            </div>
+            <div class="card col s12 m6 l3 hide-card">
+                <div class="card-image">
+                    <img src="images/article-thumbnail-4.jpg">
+                </div>
+                <div class="card-content center">
+                    <p class="card-title white-text">Our Beautiful Double Ensuites</p>
+                    <span class="green-text text-darken-5">Thursday, July 02, 2015</span>
+                </div>
+                <div class="card-action center-on-small-only">
+                    <a href="javascript:void(0)" class="btn waves-effect waves-light green accent-4">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- promo video -->
+    <div id="promo" class="scrollspy">
+        <h3 class="center title grey-text text-darken-2">PROMO VIDEO</h3>
+        <div class="wrapper">
+            <img src="images/image.jpg" alt="sample" />
+            <div class="play_btn">
+                <img src="images/play.png " alt="play" />
+            </div>
+        </div>
+        <div class="waterfall">
+            <video loop muted id="video-hd" class="aloft" width="100%">
+                <source src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/lobby-of-enormous-luxury-hotel_wy-_jeews__PM.mp4" >
+            </video>
+            <div class="play">
+                <img src="images/play.png" class="video_play" alt="play" />
+            </div>
+        </div>
+    </div>
+    <!--contact us block-->
+    <section id="contact" class="contact row scrollspy">
+        <!-- google map block-->
+        <section class="map row ">
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+            <div style='overflow:hidden;height:500px;width:100%'>
+                <div id='gmap_canvas' style='height:500px;width:100%'></div>
+                <div><small><a href="http://www.embedgooglemaps.com">Generate your Google map here, quick and easy!									Click here									Visit our website!</a></small>
+                </div>
+                <div><small><a href="https://www.amazon.com/Extra-Large-Folding-Kennel-Plastic/dp/B00M3NBJ8E/ref=sr_1_5?s=pet-supplies&ie=UTF8&qid=1470313482&sr=1-5keywords=pet+cage">Pet Wire Cage</a></small>
+                </div>
+                <style>
+                    #gmap_canvas img {
+                        max-width: none!important;
+                        background: none!important
+                    }
+                </style>
+            </div>
+            <script type='text/javascript'>
+                function init_map() {
+                    var myOptions = {
+                        zoom: 12,
+                        center: new google.maps.LatLng(11.1271225, 78.65689420000001),
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                    marker = new google.maps.Marker({
+                        map: map,
+                        position: new google.maps.LatLng(11.1271225, 78.65689420000001)
+                    });
+                    infowindow = new google.maps.InfoWindow({
+                        content: '<strong>map</strong><br>tamilnadu,india<br>'
+                    });
+                    google.maps.event.addListener(marker, 'click', function() {
+                        infowindow.open(map, marker);
+                    });
+                    infowindow.open(map, marker);
+                }
+                google.maps.event.addDomListener(window, 'load', init_map);
+            </script>
+        </section>
+        <!--form part-->
+        <section id="form" class="form col l6 offset-l3 s10 offset-s1 m8 offset-m2 z-depth-3 hide-card">
+            <form class="row">
+                <h3 class="center format title grey-text text-darken-2">CONTACT US <span class="right" id="form-close"><a href="javascript:void(0)"><i class="mdi mdi-close-circle-outline grey-text text-darken-2"></i></a></span></h3>
+                <div class="input-field col s10 offset-s1">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="name" type="text" class="validate">
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-field col s10 offset-s1">
+                    <i class="material-icons prefix">mail_outline</i>
+                    <input type="email" name="email" id="email" id="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s10 offset-s1">
+                    <i class="material-icons prefix">call</i>
+                    <input id="phone" id="phone" type="tel" class="">
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="input-field col s10 offset-s1">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="message" class="materialize-textarea" id="message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <div class="row center">
+                    <a class="center waves-effect waves-light btn-large light-green darken-1">Send now</a>
+                </div>
+            </form>
+
+        </section>
+        <button class="btn contact-btn">Contact us</button>
+    </section>
+    <!--footer-->
+    <footer class="page-footer blue-grey darken-1">
+        <div class="footer-copyright blue-grey darken-2">
+            <div class="container center ">
+                Made with <i class="material-icons red-text heart">favorite</i> &copy;2016 Copyright.All Rights Reserved
+            </div>
+        </div>
+        <!--back to top button-->
+        <div class="back-to-top fixed-action-btn">
+            <a href="#home" class="btn-floating btn-large waves-effect waves-light light-green-text">
+                <i class="material-icons">arrow_upward</i>
+            </a>
+        </div>
+        <!-- social icons -->
+        <div class="fixed-action-btn social-style">
+            <a class="btn-floating btn-large red">
+                <i class="mdi mdi-link-variant"></i>
+            </a>
+            <ul>
+                <li><a class="btn-floating blue accent-4"><i class="mdi mdi-facebook"></i></a>
+                </li>
+                <li><a class="btn-floating red"><i class="mdi mdi-google-plus"></i></a>
+                </li>
+                <li><a class="btn-floating pink lighten-1"><i class="mdi mdi-dribbble"></i></a>
+                </li>
+                <li><a class="btn-floating black"><i class="mdi mdi-github-circle"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- login modal	 -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="login-container">
+                <section class="login" id="login">
+                    <div class="login-header teal">
+                        <h4 class="grey-text text-lighten-5">Login<a class="right" id="modal-close" href="javascript:void(0)"><i class="mdi mdi-close-circle-outline grey-text text-lighten-5"></i></a></h4>
+                    </div>
+                    <form class="login-form" action="#" method="post">
+                        <div class="input-field">
+                            <input id="username" type="text" class="validate">
+                            <label for="username" data-error="Enter username">User Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="password" type="password" class="validate">
+                            <label for="password" data-error="Enter password">Password</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="checkbox" id="rem" />
+                            <label for="rem">Remember me</label>
+                        </div>
+                        <div class="input-field right">
+                            <button type="submit" class="waves-effect waves-light btn-flat">SIGN IN</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!--script files-->
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
